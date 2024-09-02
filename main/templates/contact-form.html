@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'index' %}" method="post">
+        {% csrf_token %}
+        <div>
+            <input type="text" name="your-name" placeholder="Your Name" />
+        </div>
+        <div>
+            <input type="email" name="your-email" placeholder="Your Email" />
+        </div>
+        <div>
+            <input type="text" name="your-phone" placeholder="Your Phone" />
+        </div>
+        <div>
+            <input type="text" name="your-address" placeholder="Your Address" />
+        </div>
+        <div>
+            <input type="date" name="starting-date" placeholder="Starting Date" />
+        </div>
+        <div>
+            <input type="date" name="ending-date" placeholder="Ending Date" />
+        </div>
+        <div>
+            <textarea name="your-message" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

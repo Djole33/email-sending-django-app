@@ -18,7 +18,7 @@ def index(request):
             'Message from ' + your_name, # Subject
             whole_message, # Message
             your_email, # From Email
-            ['pandajedetrsku@gmail.com'], # To Email
+            ['to_email.com'], # To Email
             fail_silently=False
             )
         
